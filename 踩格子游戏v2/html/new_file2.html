@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>踩格子小游戏</title>
+		<link rel="stylesheet" href="../css/new_file.css"/>
+		<style type="text/css">
+			#play{
+				margin-bottom: 10px;				
+			}
+			#timer{
+				display: inline-block;
+				width: 100px;
+				text-align: right;
+			}			
+			.gain ul{
+				padding-left:0;
+			}
+			.gain li{
+				list-style-type: none;
+				display: inline-block;
+			}
+			.gain img{
+				width: 24px;
+				height: 24px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="content">
+		<h1>踩格子游戏v2</h1>
+		<div id="play">
+			<button id="btn-start" onclick="start()">开始</button>
+			<span id="timer">0秒</span>
+			<button id="restart" onclick="restart()">重新开始</button>
+		</div>
+		<div class="gain">
+			<ul>
+				<li><img src="../img/苹果.png" /><span>0</span></li>
+				<li><img src="../img/草莓.png" /><span>0</span></li>
+				<li><img src="../img/葡萄.png" /><span>0</span></li>
+				<li><img src="../img/西瓜.png" /><span>0</span></li>
+				<li><img src="../img/香蕉.png" /><span>0</span></li>
+			</ul>
+		</div>
+		<!-- 绘图区（canvas） -->
+		<canvas id="canvas" width="200" height="500"></canvas>
+		</div>
+		<script type="text/javascript" src="../js/new_file.js"></script>
+	</body>
+</html>
